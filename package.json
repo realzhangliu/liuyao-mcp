@@ -1,0 +1,40 @@
+{
+  "name": "liuyao-mcp",
+  "version": "1.0.0",
+  "description": "liuyao fortune tell tool",
+  "homepage": "https://github.com/realzhangliu/liuyao-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/realzhangliu/liuyao-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realzhangliu/liuyao-mcp.git"
+  },
+  "license": "ISC",
+  "author": "zhangliu",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "liuyao-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@cfworker/json-schema": "^4.1.1",
+    "@modelcontextprotocol/server": "^2.0.0-alpha.2",
+    "lunar": "^2.0.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
